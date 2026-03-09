@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <title>Pokerole</title>
+</head>
+<body>
+    <h1>Pokerole</h1>
+    <!-- <h2>Guida sintetica</h2> -->
+    <h3>Legenda non legenda</h3>
+    <ol>
+        <li><a href="#trainers-ruleset">Regolamento dell'allenatore</a></li>
+        <li>
+            <a href="#creating-a-character">Creare un personaggio</a>
+            <ol type="a">
+                <li><a href="#concept-personality-background">Concept, personalità e background</a></li>
+                <li><a href="#filling-a-trainer-sheet">Compilare la scheda allenatore</a></li>
+            </ol>
+        </li>
+        <li>
+            <a href="#creating-a-pokemon">Creare un pokémon</a>
+            <ol type="a">
+                <li><a href="#filling-a-pokemon-sheet">Compilare una scheda pokémon</a></li>
+            </ol>
+        </li>
+    </ol>
+    <section style="height: 5em;"></section>
+
+    <article id="trainers-ruleset">
+        <h3>Regolamento dell'allenatore</h3>
+        <h4>Regole di base</h4>
+        <div class="flex space-around">
+            <ul>
+                <li>Sei responsabile delle azioni dei tuoi pokémon</li>
+                <li>Ogni pokémon ha il diritto di essere felice.</li>
+                <li>Non puoi possedere pokémon senza pokéball.</li>
+            </ul>
+            <ul>
+                <li>Puoi portare solo fino a 6 pokémon con te.</li>
+                <li>Puoi solo scambiare pokémon attraverso le<br/> <i>Official Traiding Machine</i> della lega.</li>
+            </ul>
+        </div>
+        
+        <h4>Regole delle lotte</h4>
+        <div class="flex space-around">
+            <ul>
+                <li>Puoi sfidare solo altri allenatori certificati</li>
+                <li>Puoi usare le lotte pokémon per risolvere le dispute.</li>
+                <li>Hai il diritto di sidare ogni capopalestra. I capopalestra hanno l'obbligo di accettare.</li>
+                <li>Lo sfidante sceglie il pokémon per primo. Unica eccezione sono i capipalestra e gli elites 4.</li>
+                <li>Non puoi usare più di un pokémon alla volta durante una lotta, fatta eccezione per le lotte in doppio dove non potrai usare più di due pokémon assieme.</li>
+                <li>Non puoi usare medicine durante una lotta ufficiale a meno che sia stato precedentemente accortato tra tutti gli allenatori coinvolti.</li>
+            </ul>
+            <ul>
+                <li>È serevramente vietato far usare ai tuoi pokémon oggetti o armi non autorizzate durante ogni tipo di lotta.</li>
+                <li>Mosse che possono risultare nella morte di un pokémon non sono autorizzate a piena potenza.</li>
+                <li>È severamente vietato cambiare il nome ufficiale delle mosse dei pokémon</li>
+                <li>È severamente vietato dare ordini confusi per ingannare l'avversario.</li>
+                <li>È severamente vietato interrompere o attaccare un allenatore durante una lotta ufficiale.</li>
+            </ul>
+        </div>
+
+        <div class="flash success">
+            <h4>Benefits</h4>
+            <p>prova</p>
+        </div>
+    </article>
+
+    <article id="creating-a-character">
+        <h3>Creare un personaggio</h3>
+
+        <section id="concept-personality-background">
+            <h4>Concept, personalità e background</h4>
+            <p>Per giocare dovrai creare un allenatore da impersonificare. Lascia che la fantasia abbia la meglio e scegli un personaggio che ti diverta e piaccia, dai sfogo alle tue idee più disparate, ma ricorda che dovrai recitare molto, quindi scegli una personalità che ti sia facile da interpretare.</p>
+            <p>Un allenatore è chiunque abbia la licenza di allenare i pokémon, ma questa è solo la punta dell'iceberg. puoi essere un dottore, un pescatore un aspirante modello o qualsiasi cosa trovi divertente, ma dagli anche un obiettivo e il giusto carattere.</p>
+            <p class="flash active">Tu e gli altri giocatori dovrete decidere che personaggi interpretare e questo richiederà del gioco di squadra tra di voi e con il narratore per creare il giusto team per raggiungere i vostri obiettivi.</p>
+            <p>Racconta al larrayore e ai tuoi compagni un poco del tuo passato; il tuo personaggio può essere chi vuoi, ma fai che non sia un guscio vuoto, donagli sogni ed aspirazioni, difetti e paure.</p>
+            <p>Per dar vita al tuo personaggio poniti queste domande e rispondi come farebbe lui.</p>
+            <div class="flex">
+                <article>
+                    <ol>
+                        <li>Qual è il tuo nome?</li>
+                        <li>Qual è la tua età?</li>
+                        <li>Qual è la tua <span class="variant">natura</span>?</li>
+                        <li>Qual è la tua occupazione o concept?</li>
+                        <li>Cosa ti aspetti dal mondo Pokémon?</li>
+                    </ol>
+                </article>
+                <article>
+                    <span><strong>E ancora più importanti</strong></span>
+                    <ol start="6">
+                        <li>Qual è il tuo obiettivo nel mondo Pokémon?</li>
+                        <li>Quali son le motivazioni per questo?</li>
+                        <li>Come contribuirai a rendere questo mondo migliore?</li>
+                    </ol>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="filling-a-trainer-sheet">
+            <h4>Compilare la scheda allenatore</h4>
+            <p>Ogni personaggio dispone di 4 <span class="variant">attributi</span> e 5 <span class="variant">attributi sociali</span>, tutti con un valore compreso tra 0 e 5, con un valore di partenza di 1.</p>
+            <p>Oltre a questi esistono 20 <span class="variant">skills</span> che possono apprendere e padroneggiare, anche queste con valori compresi tra 0 e 5. Questa lista elenca le skill più rilevanti, ma il proprio personaggio pu; avere competenze in diversi campi, dalla coltivazione alla poesia. È possibile inserire queste consocenze nei campi liberi extra.</p>
+            <div class="flex">
+                <table>
+                    <thead>
+                        <tr><th>Attributi</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Strenght</td></tr>
+                        <tr><td>Vitality</td></tr>
+                        <tr><td>Dexterity</td></tr>
+                        <tr><td>Insight</td></tr>
+                    </tbody>
+                </table>
+    
+                <table>
+                    <thead>
+                        <tr><th>Attributi sociali</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Tought</td></tr>
+                        <tr><td>Beauty</td></tr>
+                        <tr><td>Cool</td></tr>
+                        <tr><td>Cute</td></tr>
+                        <tr><td>Clever</td></tr>
+                    </tbody>
+                </table>
+    
+                <table>
+                    <thead>
+                        <tr><th class="center" colspan="5">Skills</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Lotta</th>
+                            <td>Brawl</td>
+                            <td>Throw</td>
+                            <td>Evasion</td>
+                            <td>Weapons</td>
+                        </tr>
+                        <tr>
+                            <th>Relazionali</th>
+                            <td>Empathy</td>
+                            <td>Etiquette</td>
+                            <td>Intimidate</td>
+                            <td>Perform</td>
+                        </tr>
+                        <tr>
+                            <th>Sopravvivenza</th>
+                            <td>Alert</td>
+                            <td>Athletic</td>
+                            <td>nature</td>
+                            <td>Stealth</td>
+                        </tr>
+                        <tr>
+                            <th>Conoscenza</th>
+                            <td>Crafts</td>
+                            <td>Lore</td>
+                            <td>Medicine</td>
+                            <td>Science</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p>Esperienza ed età detteranno le abilità del vostro personaggio, per cui ci baseremo su queste per assegnare i punti come meglio crediamo, basandoci su alcune semplici regole e tabelle.</p>
+            <div class="flex">
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th>Età</th>
+                            <th>Punti<br/>attributo<br/>extra</th>
+                            <th>Punti<br/>sociali<br/>extra</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Bambini</th>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <th>Adolescenti</th>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th>Adulti</th>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th>Anziani</th>
+                            <td>3</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="center">
+                    <thead>
+                        <tr>
+                            <th>Grado</th>
+                            <th>Punti<br/>attributo<br/>extra</th>
+                            <th>Punti<br/>sociali<br/>extra</th>
+                            <th>Punti<br/>skill</th>
+                            <th>Limite<br/>skill</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Novizio</th>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th>Principiante</th>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>+4</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <th>Dilettante</th>
+                            <td>4</td>
+                            <td>4</td>
+                            <td>+3</td>
+                            <td>3</td>
+                        </tr>
+                        <tr>
+                            <th>Esperto</th>
+                            <td>6</td>
+                            <td>6</td>
+                            <td>+2</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <th>Professionista</th>
+                            <td>8</td>
+                            <td>8</td>
+                            <td>+1</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <p>Prendendo ad esempio un adolescente che inizia la sua avventura, partiremo con 1 punto in ogni attributo e attributo sociale e nessun skill. Ora non ci resta che distribuire i punti extra e scegliere dove concentrare le nostre skills.</p>
+            <p>Leggendo la tabella delle età si può notare che gli adolescenti dispongono di 2 punti attributo e 2 punti attributo sociale extra, mentre la tabella del grado ci mette a disposizione 5 punti skill.</p>
+            <p class="flash active">Il <span class="variant">limite skill</span> indica il numero massimo di punti skill che possiamo distribuire in ogni skill in base al nostro grado.</p>
+        </section>
+    </article>
+
+    <article id="creating-a-pokemon">
+        <h3>Creare un pokémon</h3>
+        <section>
+            <p>I pokémon non hanno bisogno di avere un concept come gli allenatori. Si comporteranno secondo l-istinto della loro specie e la proria <span class="variant">natura</span>.</p>
+            <p>La natura di un pokémon tende a seguire le caratteristiche della specie, ma può variare. Due pokémon della stessa specie vorranno probabilmente le stesse cose, ma le loro differenti nature cambieranno il modo in cui cercheranno di ottenerlo.</p>
+            <p class="flash active">Un allenatore potrà dare comandi ai propri pokémon, ma questi saranno controllati dal narratore, che descriverà come il pokémon interagirà con ciò che lo circonda e con voi.</p>
+
+            <p>Nel pokédex potrete notare una pokéball a fianco dell'immagine di alcuni pokémon; questo indica che la specie è indicata agli allenatori alle prime armi.</p>
+            <p>Lo starter è un compagno che vi seguirà nelle sìvostre avventure, quindi è meglio sceglierne uno che si abbii bene alla propria personalità. Ma non c'è da disperare se non si riesce ad iniziare con il proprio pokémon preferito, questo è un modno vasto e catturare i poémon è metà del divertimento!</p>
+        </section>
+
+        <section id="filling-a-pokemon-sheet">
+            <h4>Compilare una scheda pokémon</h4>
+        </section>
+    </article>
+
+    <section style="height: 5em;"></section>
+</body>
+</html>
