@@ -9,7 +9,7 @@
 <body>
     <h1>Pokerole</h1>
     <!-- <h2>Guida sintetica</h2> -->
-    <h3>Legenda non legenda</h3>
+    <h3>Sommario</h3>
     <ol>
         <li><a href="#trainers-ruleset">Regolamento dell'allenatore</a></li>
         <li>
@@ -22,7 +22,25 @@
         <li>
             <a href="#creating-a-pokemon">Creare un pokémon</a>
             <ol type="a">
+                <li><a href="#pokemon-overview">Panoramica</a></li>
                 <li><a href="#filling-a-pokemon-sheet">Compilare una scheda pokémon</a></li>
+            </ol>
+        </li>
+        <li>
+            <a href="#attributes-and-skills-overview">Panoramica di attributi e skills</a>
+            <ol type="a">
+                <li><a href="#mental-and-phusical-attributes">Attributi fisici e mentali</a></li>
+                <li><a href="#social-attributes">Attributi sociali</a></li>
+                <li>
+                    <a href="#skills">Skills</a>
+                    <ol type="i">
+                        <li><a href="#fighting-skills">Skills di combattimento</a></li>
+                        <li><a href="#survival-skills">Skills di sopravvivenza</a></li>
+                        <li><a href="#contest-skills">Skills dei contests</a></li>
+                        <li><a href="#knowledge-skills">Skills di apprendimento</a></li>
+                        <li><a href="#extra-skills">Skills extra</a></li>
+                    </ol>
+                </li>
             </ol>
         </li>
     </ol>
@@ -31,7 +49,7 @@
     <article id="trainers-ruleset">
         <h3>Regolamento dell'allenatore</h3>
         <h4>Regole di base</h4>
-        <div class="flex space-around">
+        <div class="flex space-around wrap">
             <ul>
                 <li>Sei responsabile delle azioni dei tuoi pokémon</li>
                 <li>Ogni pokémon ha il diritto di essere felice.</li>
@@ -39,12 +57,12 @@
             </ul>
             <ul>
                 <li>Puoi portare solo fino a 6 pokémon con te.</li>
-                <li>Puoi solo scambiare pokémon attraverso le<br/> <i>Official Traiding Machine</i> della lega.</li>
+                <li>Puoi solo scambiare pokémon attraverso le<br/> <span class="variant">Official Trading Machine</span> della lega.</li>
             </ul>
         </div>
         
         <h4>Regole delle lotte</h4>
-        <div class="flex space-around">
+        <div class="flex space-around wrap">
             <ul>
                 <li>Puoi sfidare solo altri allenatori certificati</li>
                 <li>Puoi usare le lotte pokémon per risolvere le dispute.</li>
@@ -52,8 +70,6 @@
                 <li>Lo sfidante sceglie il pokémon per primo. Unica eccezione sono i capipalestra e gli elites 4.</li>
                 <li>Non puoi usare più di un pokémon alla volta durante una lotta, fatta eccezione per le lotte in doppio dove non potrai usare più di due pokémon assieme.</li>
                 <li>Non puoi usare medicine durante una lotta ufficiale a meno che sia stato precedentemente accortato tra tutti gli allenatori coinvolti.</li>
-            </ul>
-            <ul>
                 <li>È serevramente vietato far usare ai tuoi pokémon oggetti o armi non autorizzate durante ogni tipo di lotta.</li>
                 <li>Mosse che possono risultare nella morte di un pokémon non sono autorizzate a piena potenza.</li>
                 <li>È severamente vietato cambiare il nome ufficiale delle mosse dei pokémon</li>
@@ -64,7 +80,19 @@
 
         <div class="flash success">
             <h4>Benefits</h4>
-            <p>prova</p>
+            <ul>
+                <li>Le lotte ufficiali dovranno sempre premiare il vincitore con un compenso monetario secondo il precedente accordo. In caso non ci si sia accordati, la ricompensa sarà metà deli soldi della parte vinta.</li>
+                <li>Hai il diritto di usufruire gratuitamente di ogni struttura della Lega.</li>
+            </ul>
+        </div>
+
+        <div class="flash danger">
+            <h4>Sanzioni</h4>
+            Infrangere queste regole, anche non intenzionalmente, risulterà in una sanzione dalle autorità della Lega Pokémon.
+            <ul>
+                <li>Dipendentemente dall'offesa si può passare dal una multa di $5000 e servizi comunitari alla sospensione o revoca della licenza di allenatore</li>
+                <li>Ricordate che la Lega pokémon e la polizia son due istituzioni differenti. Un'infrazione in una delle due non ha ripercussioni sull'altra.</li>
+            </ul>
         </div>
     </article>
 
@@ -78,7 +106,7 @@
             <p class="flash active">Tu e gli altri giocatori dovrete decidere che personaggi interpretare e questo richiederà del gioco di squadra tra di voi e con il narratore per creare il giusto team per raggiungere i vostri obiettivi.</p>
             <p>Racconta al larrayore e ai tuoi compagni un poco del tuo passato; il tuo personaggio può essere chi vuoi, ma fai che non sia un guscio vuoto, donagli sogni ed aspirazioni, difetti e paure.</p>
             <p>Per dar vita al tuo personaggio poniti queste domande e rispondi come farebbe lui.</p>
-            <div class="flex">
+            <div class="flex wrap">
                 <article>
                     <ol>
                         <li>Qual è il tuo nome?</li>
@@ -89,7 +117,7 @@
                     </ol>
                 </article>
                 <article>
-                    <span><strong>E ancora più importanti</strong></span>
+                    <span class="bold">E ancora più importanti</span>
                     <ol start="6">
                         <li>Qual è il tuo obiettivo nel mondo Pokémon?</li>
                         <li>Quali son le motivazioni per questo?</li>
@@ -103,8 +131,8 @@
         <section id="filling-a-trainer-sheet">
             <h4>Compilare la scheda allenatore</h4>
             <p>Ogni personaggio dispone di 4 <span class="variant">attributi</span> e 5 <span class="variant">attributi sociali</span>, tutti con un valore compreso tra 0 e 5, con un valore di partenza di 1.</p>
-            <p>Oltre a questi esistono 20 <span class="variant">skills</span> che possono apprendere e padroneggiare, anche queste con valori compresi tra 0 e 5. Questa lista elenca le skill più rilevanti, ma il proprio personaggio pu; avere competenze in diversi campi, dalla coltivazione alla poesia. È possibile inserire queste consocenze nei campi liberi extra.</p>
-            <div class="flex">
+            <p>Oltre a questi esistono 20 <span class="variant">skills</span> che possono apprendere e padroneggiare, anche queste con valori compresi tra 0 e 5. Questa lista elenca le skill più rilevanti, ma il proprio personaggio può avere competenze in diversi campi, dalla coltivazione alla poesia. È possibile inserire queste consocenze nei campi liberi extra.</p>
+            <div class="flex wrap">
                 <table>
                     <thead>
                         <tr><th>Attributi</th></tr>
@@ -168,7 +196,7 @@
             </div>
             
             <p>Esperienza ed età detteranno le abilità del vostro personaggio, per cui ci baseremo su queste per assegnare i punti come meglio crediamo, basandoci su alcune semplici regole e tabelle.</p>
-            <div class="flex">
+            <div class="flex wrap">
                 <table class="center">
                     <thead>
                         <tr>
@@ -258,7 +286,8 @@
 
     <article id="creating-a-pokemon">
         <h3>Creare un pokémon</h3>
-        <section>
+        <section id="pokemon-overview">
+            <h4>Panoramica</h4>
             <p>I pokémon non hanno bisogno di avere un concept come gli allenatori. Si comporteranno secondo l-istinto della loro specie e la proria <span class="variant">natura</span>.</p>
             <p>La natura di un pokémon tende a seguire le caratteristiche della specie, ma può variare. Due pokémon della stessa specie vorranno probabilmente le stesse cose, ma le loro differenti nature cambieranno il modo in cui cercheranno di ottenerlo.</p>
             <p class="flash active">Un allenatore potrà dare comandi ai propri pokémon, ma questi saranno controllati dal narratore, che descriverà come il pokémon interagirà con ciò che lo circonda e con voi.</p>
@@ -269,9 +298,130 @@
 
         <section id="filling-a-pokemon-sheet">
             <h4>Compilare una scheda pokémon</h4>
+            <p>Per compilare la scheda del vostra scheda pokémon dovrete copiare le informazioni dalla sua voce nel Pokédex.</p>
+            <p>Il pokémon con cui inizierete l'avventura sarà del vostro stesso grado, questo influenzerà le mosse che conoscerà, le sue abilità e la distribuzione dei suoi punti attributo.</p>
+            <p>I pokémon selvatici, invece, potranno essere di grado differente dal vostro. In caso di cattura il pokémon raggiungerà il vostro grado dopo qualche <span class="variant">sessione di allenamento</span>.</p>
+            <p class="flash active">Un pokémon di grado superiore al vostro potrebbe non seguire in vostri ordini.</p>
+            <p>Una volta copiate le ifnormazioni di base dal Pokédex, non resterà che distribuire punti attributo e skill per rendere unico il pokémon.</p>
         </section>
     </article>
+    
+    <article id="attributes-and-skills-overview">
+        <h3>Panoramica di attributi e skills</h3>
+        <section id="mental-and-phusical-attributes">
+            <h4>Attributi fisici e mentali</h4>
+            <p>Il tuo personaggio interagirà con il mondo attraverso i suoi attributi e skills.</p>
+            <p>Ogni punto rappresenta un dado che puoi tirare per quell'attributo, qualora la situazione lo richieda. Si può effettuare una prova sul semplice attributo per azioni mondane o può essere combinato con le skills se vuoi fare qualcosa di complesso o una prodezza incredibile.</p>
+            <p>I punteggi vanno da 1 a 5 per gli umani, ma alcuni dei pokémon più forti possono superare questo numero.</p>
+            <p class="flash active">Ricordate di non superare il limite della specie quando assegnate i punti attributo.</p>
+            
+            <hr>
+            <h5 class="active">Strenght</h5>
+            <p>La forza determina il potenziale di trasportare carichi pesanti, infliggere danni fisici e lo sviluppo muscolare.</p>
+            
+            <hr>
+            <h5 class="active">Vitality</h5>
+            <p>La vitalità determina la tua resistenza e tolleranza a dolore e affaticamento, ma anche salute e vigore del soggetto.</p>
+            <p class="flash active">Ogni punto in vitalità dona <b>+1 <span class="variant">HP</span></b> e <b>+1 <span class="variant">Difesa</span></b>.</p>
+            
+            <hr>
+            <h5 class="active">Dexterity</h5>
+            <p>La destrezza determina l'agilità, flessibilità e coordinazione.</p>
+            
+            <hr>
+            <h5 class="active">Insight</h5>
+            <p>L'abilità di essere consapevole, percettivo e comprendere te stesso, gli altri e ciò che ti circonda. Il potere mentale di vedere oltre le apparenze</p>
+            <p class="flash active">Ogni punto in insight dona <b>+1 <span class="variant">Difesa Speciale</span></b></p>
+            
+            <hr>
+            <h5 class="active">Special</h5>
+            <p>L'abilità unica dei pokémon di perfomare prodezze proprie della specie, come soffiare fiamme, produrre elettricità, controllare le ombre, ecc...</p>
+        </section>
 
+        <section id="social-attributes">
+            <h4>Attributi sociali</h4>
+            <p>Nonostante passerete molto tempo a recitare attivamente, che sia in maniera raffinata, grezza o cute, gli attributi sociali renderanno molto più convincente la vostra performance in-game.</p>
+            <p class="flash active">Gli attributi sociali sono una componente vitale di <span class="variant">Contest</span> e altre situazionidove non puoi farti strada combattendo.</p>
+            
+            <hr>
+            <h5 class="active">Tough</h5>
+            <p>Un atteggiamento tosto incute rispetto, intimidisce e forza il controlo sugli altri.</p>
+            <p>Se devi affontare una situazione di petto o metterti in mezzo a qualcuno che si sta comportando aggressivamente, essere tosti è la via migliore!</p>
+            
+            <hr>
+            <h5 class="active">Cool</h5>
+            <p>Questo attributo denota un atteggiamento carismatico, sicuro e affidabile quando si interagisce con persone e pokémon.</p>
+            <p>Ideale per sedare litigi, influenzare positivamente qualcuno e farsi nuovi amici con facilità.</p>
+            
+            <hr>
+            <h5 class="active">Beuty</h5>
+            <p>La bellezza riguarda l'aspetto, ma anche l'eleganza e un atteggiamento di classe. La tua bellezza ti aiuterà ad ottenere il favore altrui e lasciare tutti esterefatti da come appari perfetto senza alcuno sforzo.</p>
+            
+            <hr>
+            <h5 class="active">Clever</h5>
+            <p>L'abilità di ricordare, comprendere e risolvere problemi. Ne hai bisogno per capire ciò che ti circonda ed essere capace di trovare la soluzione migliore.</p>
+            
+            <hr>
+            <h5 class="active">Cute</h5>
+            <p>Un comportamento dolce ed innocente che fa abbassa la guardia. Ti dona un'aria di purezza che fa veire agli altri voglia di proteggerti.</p>
+            <p>Questa dolcezza può essere ingannevole in quanto ottima per manipolare gli altri attraverso il proprio fascino.</p>
+        </section>
+
+        <section id="skills">
+            <h4>Skills</h4>
+            <p>Avrai bisogno di skills per rendere la tua avventura più semplice and superare le diverse situazioni che ti si pareranno davanti. Una skill è un compendio variegato di conoscenze applicate che possono coprire un grande numero di situazioni e non sono specifiche e proprie di una certa disciplina.</p>
+            <p>Anche il tuo pokémon è n grado impararne alcune per conto suo, ma puoi anche allenarli così che crescano forti.</p>
+            <p>Ci son molte skill differenti al mondo e non è possibile praticarle tutte. Nonostante le più rilevanti siano elencate sotto, puoi imparare quello che vuoi e potrai annotarlo nella voce <span class="variant">EXTRA</span> della scheda allenatore. Ricorda che i pokémon avranno bisogno delle istruzioni del loro allenatore per imparare skills che esulano dalla lista presentata.</p>
+            <p class="flash active">Ogni skill point sarà un dado aggiuntivo da lanciare in caso si necessiti più di della forza fisica, mentale o sociale naturali.<br/>
+            <b>N.B. i dadi delle skills vanno lanciati sempre assieme a quelli attributo, MAI da soli.</b></p>
+            <div class="flex space-around">
+                <p class="flash variant centered">Il più delle prove richiederà di lanciare<br/><span class="bold">ATTRIBUTO + SKILL</span><br/>Crea delle combinazioni per ottenere un numero di dadi<br/>adatto all'azione che stai cercando di compiere.</p>
+            </div>
+
+            <hr>
+            <h5 id="fighting-skills" class="active">Skills di combattimento</h5>
+            <p>Da calci e pugni a morsi e tirate di capelli; devi avere un'idea di cosa fare per poter vincere una lotta.</p>
+            <p>Queste skills definiranno il tuo stile di combattimento, puoi scegliere di concentrarti su una o mischiarle tra di loro, dipende tutto dalla strategia che stai seguendo.</p>
+            <p><span class="bold variant">Brawl</span> ti concentri sullo scontro fisico, facendo contatto con calci, pugni, placcaggi, morsi, ecc...</p>
+            <p><span class="bold variant">Channel</span> i pokémon controllano l'energia del loro tipo, sfruttando questa specialità riescono ad usare glo</p>
+            <p><span class="bold variant">Clash</span> i pokémon si scontrano spesso, usa questa specialità per bloccare l'attacco avversario con il tuo.</p>
+            <p><span class="bold variant">Evasion</span> schivare è il tuo punto forte, ti concentri sull'uscire dal raggio d'azione e movimenti fluidi per minimizzare i danni.</p>
+            <p><span class="bold variant">Throw</span> l'abilità di un allenatore di lanciare pokéball, rocce, esche, freccette o altri proiettili con precisione.</p>
+            <p><span class="bold variant">Weapons</span> gli uomini non hano <span class="variant">Mosse</span>, ma possono usare armi e trappole se non hanno i propri pokémon con sé.</p>
+
+            <hr/>
+            <h5 id="survival-skills" class="active">Skills di sopravvivenza</h5>
+            <p>Che tu voglia fare un'escursione nella natura o una passeggiata per la città, devi sapere come evitare i pericoli che si nascondono dietro ogni angolo.</p>
+            <p><span class="bold variant">Alert</span> rappresenta l'acutezza dei tuoi sensi, può essere una buona vista, un ottimo udito o un famigerato senso dell'olfatto. Essere allerta aiuta a reagire al pericolo più in fretta.</p>
+            <p><span class="bold variant">Athletic</span> corri, arrampicati, salta, nuota, cammina a testa in giù! Sai come ottenere il massimo dal tuo corpo.</p>
+            <p><span class="bold variant">Nature</span> creare un fuoco da zero, conoscere quali piante puoi mangiare. come costruire un rifugio e i cicli della natura ti aiuterà ad usare le sue grazie a tuo favore.</p>
+            <p><span class="bold variant">Stealth</span> il modo migliore per evitare il pericolo è fare in modo che non ti scopra, ti alleni ad essere veloce e silenzioso, confondendoti con l'ambiente circostante per passare inosservato.</p>
+
+            <hr/>
+            <h5 id="contest-skills" class="active">Skills dei contests</h5>
+            <p>Queste skills coprono tutto ciò che ti server per mettere in atto un'ottima performance nei <span class="variant">Contest Pokémon</span> e nella maggior parte delle situazioni sociali, quindi migliorare queste abilità ti salverà da scontri inutili.</p>
+            <p><span class="bold variant">Allure</span> i pokémon proveranno spesso a dimostrare interesse nei tuoi confronti, che sia per vincere il tuo favore o evitare di essere attaccati. Quanto genuino questo atteggiamento appaia agli altri dipende da questa specialità.</p>
+            <p><span class="bold variant">Empathy</span> gli uomini sono creature empatiche, la tua capacità di entrare in empatia con i sentimenti degli altri e di condividere le loro gioie e i loro dolori sarà misurata da questa abilità.</p>
+            <p><span class="bold variant">Etiquette</span> alcune situazioni richiedono buona educazione, eleganza, raffinatezza, gentilezza e grazia. Queste fanno la differenza tra un principe e un povero.</p>
+            <p><span class="bold variant">Intimidate</span> altre situazioni, invece, richiederanno un'occhiata di sdegno o un commento tagliente. L'intiidazione è utile per forzare o manipolare gli altri a far ciò che si desidera.</p>
+            <p><span class="bold variant">Perform</span> danza, canto, recitazione, impersonificazione e bluffare! Tutto ciò che potrebbe richiedere un atto convincente migliorerà se ti specializzi nella performance</p>
+
+            <hr/>
+            <h5 id="knowledge-skills" class="active">Skills di apprendimento</h5>
+            <p>Gli uomini hano bisogno di conoscere molte cose nella vita e mentre alcuni imparano solo ciò che vien insegnato loro a scuola, altri cercheranno risposte sulla loro strada verso la conoscenza.</p>
+            <p>Un pokémon avrà bisogno di un eccellenti punteggi in <span class="variant">Insight</span> e <span class="variant">Clever</span> per apprendere questi concetti.</p>
+            <p><span class="bold variant">Crafts</span> sai costruire di tutto con le tue mani, qualche utensile e pochi materiali. Disegnare, scolpire, cucinare, riparare, ecc...</p>
+            <p><span class="bold variant">Lore</span> la conoscenza delle differenti specie pokémon, le loro leggende e credenze riguardo la posizione e l'origine dei pokémon rari nell'area</p>
+            <p><span class="bold variant">Medicine</span> come prendersi cura delle ferite, primo soccorso, cure d'emergenza, applicare le medicine e anche creare i propri rimedi sarà possibile se ci si specializza nella medicina</p>
+            <p><span class="bold variant">Science</span> scegli un qualsiasi campo scientifico o di ricerca che vuoi. Ad esempio tecnologia, chimica, fisica, geologia, ingegneria, evoluzione pokémon, ecc... puoi contnuare a studiare ed aggiungere altri campi per specializzarti oltre.</p>
+
+            <hr/>
+            <h5 id="extra-skills" class="active">Skills extra</h5>
+            <p>Talvolta avrai bisogno di conoscenze che non son elencate nella scheda allenatore, queste skills potranno solo essere ottenute a discrezione del narratore.</p>
+            <p>I pokémon avranno bisogno di istruzioni dal loro allenatore per guadagnare queste skills.</p>
+        </section>
+    </article>
+    
     <section style="height: 5em;"></section>
 </body>
 </html>
