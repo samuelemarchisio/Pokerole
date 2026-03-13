@@ -43,6 +43,37 @@
                 </li>
             </ol>
         </li>
+        <li>
+            <a href="#other-stats">Altre statistiche</a>
+            <ol type="a">
+                <li><a href="#health-points">Punti salute (HP)</a></li>
+                <li><a href="#will-points">Punti Will</a></li>
+                <li><a href="#happiness-and-loyalty">Felicità e fedeltà</a>
+                    <ol type="i">
+                        <li><a href="#happiness">Felicità</a></li>
+                        <li><a href="#loyalty">Fedeltà</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <a href="#rolling-the-dices">Lanciare i dadi</a>
+            <ol type="a">
+                <li><a href="#critical-failure">Fallimento critico</a></li>
+            </ol>
+        </li>
+        <li>
+            <a href="#ranking">Classificazione e gradi</a>
+            <ol type="a">
+                <li><a href="#starter-rank">Starter - Novizio</a></li>
+                <li><a href="#beginner-rank">Beginner - Principiante</a></li>
+                <li><a href="#amateur-rank">Amateur - Dilettante</a></li>
+                <li><a href="#ace-rank">Ace - Esperto</a></li>
+                <li><a href="#pro-rank">Pro - Professionista</a></li>
+                <li><a href="#master-rank">Master - Specialista</a></li>
+                <li><a href="#champion-rank">Champion - Campione</a></li>
+            </ol>
+        </li>
     </ol>
     <section style="height: 5em;"></section>
 
@@ -421,7 +452,197 @@
             <p>I pokémon avranno bisogno di istruzioni dal loro allenatore per guadagnare queste skills.</p>
         </section>
     </article>
+
+    <article id="other-stats">
+        <h3>Altre statistiche</h3>
+        <section id="health-points">
+            <h4>Punti salute (HP)</h4>
+            <p>I punti salute misurano lo stato del corpo del tuo personaggio.</p>
+            <p>Ogni essere vivente ha degli HP di base, che rappresentano la resistenza della specie ai danni e al dolore. Talvolta ciò che può provocare una lesione invalidante per alcune creature, può sembrare un pizzicotto ad un'altra specie. Tutto dipende da com'è strutturato il loro corpo.</p>
+            <p>Per calcolare gli HP totali vanno sommati il numero di punti che in <span class="variant">Vitality</span> ai <span class="variant">Base HP</span>.</p>
+
+            <div class="flex space-around">
+                <p class="flash variant centered">Gli uomini hanno 4 Base HP<br/><br/>Ogni pokémon ha i propri Base HP elencati<br/>nella rsipettiva voce del Pokédex</p>
+            </div>
+
+            <p class="flash active">Ogni volta che si subisce del danno si perdono degli HP.</p>
+            <p>QUesta perdita di punti salute è solo temporanea e si possono recuperare con il tempo o delle medicine. Se si ricevono danni pari ai propri HP totali si sarà impossibilitati a muoversi e si sverrà.</p>
+            <p>Se si continuano a ricevere danni dopo che si sarà svenuti, questi danni diventeranno <span class="variant">Letali</span>. Questo significa che le ferite peggioreranno e la vostra vità sarà in pericolo.</p>
+            <p class="flash active">Alcune mosse possono infliggere direttamente del <span class="variant">Danno Letale.</span><br/>Subire danno letale pari ai propri HP totali comporterà la morte del personaggio.</p>
+        </section>
+        
+        <section id="will-points">
+            <h4>Punti Will</h4>
+            <p>Nel corso della storia numerose persone hanno compiuto azioni che ormalmente sembrerebbero impossibili: una fragile donna che solleva un enorme masso per salvare il suo infante o un uomo con la gamba rotta che si alza per scappare da un incendio.</p>
+            <p>In questi scenari, le persone impiegavano tutte le loro forze, superando i limiti delle proprie restrizioni fisiche per realizzare qualcosa di grande.</p>
+            <p>L'attributo Will misura quanto tu possa sfruttare la tua forza interiore.</p>
+
+            <div class="flex space-around">
+                <div class="flash variant">
+                    <p class="centered">Uomini e pokémon hanno punti Will pari<br/><b>INSIGHT + 2</b></p>
+                </div>
+            </div>
+
+            <p>Il narratore può richiedere ai giocatori di eseguire un lancio usando il loro attributo Will per vincere la paura, rabbia o tristezza, ma anche per appellare alla loro coscienza quando provano a fare qualcosa di sbagliato.</p>
+            <p>I punti Will possono anche essere spesi per resistere al dolore o aumentare le possibilità di successo in un lancio.</p>
+
+            <div class="flex space-around">
+                <div class="flash variant">
+                    <p><b>Come funziona:</b></p>
+                    <p>Annuncia che il tuo personaggio o pokémon stanno<br/>dando tutto quello che hanno.</p>
+                    <p><b>- Spendi 1 Punto Will per ignorare 1 di Pain/Stress<br/>Penalization <u>per l'intera durata della scena</u></b><br/>Note: <i>questo significa che se spenderete 2 punti potrete</br/>ignorare 2 Pain Penalizations e così via.</i></p>
+                    <p><b>- Spendi 1 Punto Will per rilanciare 1 dado che non ha<br/>ottenuto un successo <u>in ogni lancio del turno corrente.</u></b></p>
+                </div>
+            </div>
+
+            <p>Una volta speso un punto, però, il personaggio sarà effaticato e se finiscono i Will Points, perderà coscienza e sverrà al termine del turno per lo sforzo dell'essere andato oltre i propri limiti.</p>
+            <p>Uomini e pokémon non vengono al mondo con l'abilità di usare la loro forza interiore a piacere. È qualcosa che ogni creatura userà solo in situazioni estreme e, anche allora, la maggior parte non ne sarà in grado.</p>
+            <p>Un allenatore dovrà insegnare ai propri pokémon come controllare la propria forza interiore. Magari dopo saranno in grado di usarla a piacere.</p>
+            <p>Se un allenatore non è in grado di usare la propria forza interiore è possibile che neanche i suoi pokémon saranno in grado. La maggior parte dei personaggi non giocanti (NPC) non useranno i prorpi punti Will, in quanto solo gli allenatori più bravi e pokémon più proficienti ne sono in grado.</p>
+            <div class="flex space-around">
+                <div class="flash variant">
+                    <p>Per recuperare un punto Will il personaggio dovrà:</p>
+                    <ul>
+                        <li>Riposare alcuni giorni;</li>
+                        <li>Sentirsi appagato dall'aver realizzato qualcosa di grande;</li>
+                        <li>Seguire la propria natura;</li>
+                        <li>Venir premiato dal narratore per una buona interpretazione;</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="happiness-and-loyalty">
+            <h4>Felicità e fedeltà</h4>
+            <p>Questi attributi definiranno quanto sia buona la relazione con i tuoi pokémon e per uqesto sono tra i più importanti. Qual è l'utilità di avere pokémon forti se ti odiano e vogliono scappare?</p>
+            <p>È normale per gli allenatori aver difficoltà con pokémon appena catturati, anzi, potrebbero venire attaccati da questi, per quel che ne sanno è il secondo round! Questo dipende dalla situazione in cui un pokémon è stato catturato, dalla specie e dalla loro natura. Il miglior consiglio è di partire col piede giusto.</p>
+            <p class="flash active"><span class="variant">Happiness</span> e <span class="variant">Loyalty</span> vanno da 0 a 5. I pokémon selvatici hanno generalmente 2 punti in entrambe.</p>
+            <p>Appena catturato, reduci la loro Loyalty dello stesso valore di Pain Penalization che hai inflitto loro.</p>
+            <p>La felicità, invece, va ridotta a 0 se è stato catturato contro la propria volontà, a 1 se la lotta è stata ingiusta (più avversari, uso di strumenti, ecc...) e mantenuta a 2 se si è combattuto in maniera onesta.</p>
+            <p class="flash active">Questi due tratti non possono essere aumentati con un aumento di <span class="variant">Grado</span>, bisogna recitare il proprio ruolo per influenzarli.</p>
+            <p>Mentre questi due attributi non son direttamente correlati, far felice un pokémon è un buon modo per incrementare la sua fedeltà. e recitare è la chiave per incrementare entrambi.</p>
+            <p class="flash active">Puntate a costruire un rapporto forte con i vostri pokémon prima che evolvano, perché dopo sarà più difficile.</p>
+
+            <h5 id="happiness" class="active">Felicità</h5>
+            <p>Questo tratto riguarda la felicità ed il benessere. La maggior parte dei pokémon son creature semplici, quello che vogliono è sicurezza, cibo, stabilità e, soprattutto, sentirsi utili.</p>
+            <p>Alcuni pokémon saranno felici del lusso e della comodità delle città, mentre altri preferiranno un ambiente più naturale. Bisogna cercare di dar loro ciò di cui han bisogno.</p>
+
+            <h5 id="loyalty" class="active">Fedeltà</h5>
+            <p>Questo tratto indica quanto un pokémon sia disposto a fare per te; dall'ignorarti al rischiare la loro vita per salvarti, un pokémon fedele è il miglior amico tu possa avere, nel bene e nel male.</p>
+            <p>L'evoluzione può portare un forte aumento di potere che farà sentir loro di non aver più bisogno di te, quindi la loro lealtà potrebbe scendere, in alcuni casi il vostro rapporto potrebbe rovinarsi completamente, facendovi sentire estranei.</p>
+
+            <div class="flex space-around">
+                <p class="flash variant centered">Quando un pokémon evolve, lanciate con<br/>l'attributo sociale alto dell'allenatore.<br/>Bisogna ottenere almeno due successi<br/>altrimenti la fedeltà scenderà di 1 punto.</p>
+            </div>
+        </section>
+    </article>
+
+    <article id="rolling-the-dices">
+        <h3>Lanciare i dadi</h3>
+        <p></p>
+        <section id="critical-failure">
+            <h4>Fallimento critico</h4>
+            <p></p>
+        </section>
+    </article>
+
+    <article id="ranking">
+        <h3>Classificazione e gradi</h3>
+        <p></p>
+        
+        <section id="starter-rank">
+            <h4>Starter - Novizio</h4>
+            <p></p>
+            <h4>Traguardi necessari</h4>
+            <ul>
+
+            </ul>
+            <h4>Benefits</h4>
+            <ul>
+
+            </ul>
+        </section>
+        
+        <section id="beginner-rank">
+            <h4>Beginner - Principiante</h4>
+            <p></p>
+            <h4>Traguardi necessari</h4>
+            <ul>
+
+            </ul>
+            <h4>Benefits</h4>
+            <ul>
+
+            </ul>
+        </section>
+        
+        <section id="amateur-rank">
+            <h4>Amateur - Dilettante</h4>
+            <p></p>
+            <h4>Traguardi necessari</h4>
+            <ul>
+
+            </ul>
+            <h4>Benefits</h4>
+            <ul>
+
+            </ul>
+        </section>
+        
+        <section id="ace-rank">
+            <h4>Ace - Esperto</h4>
+            <p></p>
+            <h4>Traguardi necessari</h4>
+            <ul>
+
+            </ul>
+            <h4>Benefits</h4>
+            <ul>
+
+            </ul>
+        </section>
+        
+        <section id="pro-rank">
+            <h4>Pro - Professionista</h4>
+            <p></p>
+            <h4>Traguardi necessari</h4>
+            <ul>
+
+            </ul>
+            <h4>Benefits</h4>
+            <ul>
+
+            </ul>
+        </section>
+        
+        <section id="master-rank">
+            <h4>Master - Specialista</h4>
+            <p></p>
+            <h4>Traguardi necessari</h4>
+            <ul>
+
+            </ul>
+            <h4>Benefits</h4>
+            <ul>
+
+            </ul>
+        </section>
+        
+        <section id="champion-rank">
+            <h4>Champion - Campione</h4>
+            <p></p>
+            <h4>Traguardi necessari</h4>
+            <ul>
+
+            </ul>
+            <h4>Benefits</h4>
+            <ul>
+
+            </ul>
+        </section>
+    </article>
     
+
     <section style="height: 5em;"></section>
 </body>
 </html>
