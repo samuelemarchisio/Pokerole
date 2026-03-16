@@ -6,12 +6,22 @@
     <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
     <title>Pokerole</title>
 </head>
-<body>
+<body id="main">
     <h1>Pokerole</h1>
     <!-- <h2>Guida sintetica</h2> -->
-    <h3>Sommario</h3>
+    <a href="#main" class="flash variant fixed smaller" style="right: .5em; bottom: .5em;">
+        <span>UP</span>
+    </a>
+    <h3 id="summary">Sommario</h3>
     <ol>
-        <li><a href="#trainers-ruleset">Regolamento dell'allenatore</a></li>
+        <li><a href="#introduction">Introduzione</a></li>
+        <li>
+            <a href="#trainers-ruleset">Regolamento dell'allenatore</a>
+            <ol type="a">
+                <li><a href="#for-the-storyteller">Per il Narratore</a></li>
+                <li><a href="#for-the-players">Per i Giocatori</a></li>
+            </ol>
+        </li>
         <li>
             <a href="#creating-a-character">Creare un personaggio</a>
             <ol type="a">
@@ -49,10 +59,10 @@
                 <li><a href="#health-points">Punti salute (HP)</a></li>
                 <li><a href="#will-points">Punti Will</a></li>
                 <li><a href="#happiness-and-loyalty">Felicità e fedeltà</a>
-                    <ol type="i">
+                    <!-- <ol type="i">
                         <li><a href="#happiness">Felicità</a></li>
                         <li><a href="#loyalty">Fedeltà</a></li>
-                    </ol>
+                    </ol> -->
                 </li>
             </ol>
         </li>
@@ -74,8 +84,33 @@
                 <li><a href="#champion-rank">Champion - Campione</a></li>
             </ol>
         </li>
+        <li>
+            <a href="#natures">Nature</a>
+            <ol type="a">
+                
+            </ol>
+        </li>   
     </ol>
     <section style="height: 5em;"></section>
+
+    <article id="introduction">
+        <h3>Creare una storia</h3>
+        <h4 id="for-the-storyteller">Per il Narratore</h4>
+        <p>I giocatori si aspetteranno di vivere un'avventura e quando usciranno alla ricerca di guaia, troveranno il <span class="variant">Narratore</span> pronto a soddisfarli.</p>
+        <p>Essere un narratore e creare una storia non è difficile come si crede; rilassati e divertiti con le idee più svariate, ricorda solo che sei qui per far sì che tutti si divertano.</p>
+        <p>Per iniziare, parla con i giocatori e chiedi loro come vogliano giocare, cosa si aspettino dalla storia e che percezione abbiano del mondo dei Pokémon. Devi unificare le loro percezioni per esser certo che i loro personaggi vengano creati con una chiara idea di come la società funzioni e quale sia la loro atteggiamento rispetto ai pokémon e le altre persone, magari fornendo loro una breve spiegazione di cosa incontreranno.</p>
+        <p class="flash active">Ascolta i dubbi dei giocatori e condividi i tuoi, perché è anche una loro responsabilità quella di creare personaggi piacevoli e che possano contribuire alla storia.</p>
+        <p>Qualcuno che antagonizzi gli altri giocatori o il narratore non sta ricoprendo correttamente il proprio ruolo; assicurati nessuno crei un personaggio che non ci si possa far amico.</p>
+        
+        <h4 id="for-the-players">Per i Giocatori</h4>
+        <p>Ecco alcune dritte anche per i giocatori.</p>
+        <p><b>Seguite il flusso</b>, rimanete nel personaggio e recitate attivamente il ruolo. Invece di dire: <i>"Faccio uscire il mio pokémon drago e gli ordino di attaccare"</i>, agite come se steste vivendo la situazione, dicendo qualcosa come <i>"Vai Garchomp! Carica usando Dragofuria!"</i>. Non siate timidi, divertitevi!</p>
+        <p><b>Siate concentrati</b>, anche se non sta succedendo molto o la scena non vi riguarda attivamente. Siate calmi e ascoltate, prestare attenzione quando il Narratore sta parlando è semplice cortesia e renderà il gioco più fluido e veloce.</p>
+        <p><b>Lavorate come un gruppo</b>, siate amichevoli con li altri giocatori ed il loro personaggi. I vostri personaggi sono un team e devono lavprare come tale, antagonizzare un compagno per il proprio divertimento è fastidioso e irrispettoso. Non siate <i>quella</i> persona.</p>
+        <p><b>Abbiate un obiettivo</b>, che sia sconfiggere le palestre o esplorare rovine antiche in cerca di pokémon rari, è importante avere un goal da raggiungere. E se per qualche motivo non avete idea di cosa fare, chiedete al narratore di ripetere i punti importanti per la storia.</p>
+        <p><b>Non focalizzatevi troppo su regole e meccaniche</b>, è il narratore che decide cosa sia appropriato per la storia. Se ci son conflitti o stalli, usate il buon senso e priorizzate lo scorrere della storia sopra tutto il resto.</p>
+        <p><b>Provate a essere voi stessi dei Narratori</b>, ognuno ha l'abilità di raccontare una storia e siete incoraggiati a farlo di volta in volta. È una bella esperienza ed è più semplice di quel che possiate pensare.</p>
+    </article>
 
     <article id="trainers-ruleset">
         <h3>Regolamento dell'allenatore</h3>
@@ -539,107 +574,203 @@
 
     <article id="rolling-the-dices">
         <h3>Lanciare i dadi</h3>
-        <p></p>
+        <p>Le nostre vite son influenzate tutto il tempo da fattori casuali, fattori che in questo gioco di ruolo prenderanno la forma di dadi a 6 facce.</p>
+        <p>A meno che non sia qualcosa di particolarmente semplice, ogni <span class="variant">Action Roll</span> è composta da un <span class="variant">Attributo</span> e una <span class="variant">Skill</span>. La somma complessiva dei punti che un personaggio ha in questi tratti rappresenta il numero di dadi lanciati per decidere l'esito dell'azione.</p>
+        <span class="flash active">Lanciando i dadi, ogni risultato pari o superiore a 4 rappresenta un successo. Il numero di successi richiesti per portare a compimento correttamente un'azione dipende dalla sua difficoltà.</span>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Successi<br/>richiesti</th>
+                    <th>Livello di difficoltà</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td><u>Problematico</u>. Raramente si fa qualcosa del genere.</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td><u>Impegnativo</u>. Ci son ostacoli da superare.</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td><u>Difficile</u>. Le codizioni ti mettono in una posizione sfavorevole.</td>
+                </tr>
+                <tr>
+                    <th>4</th>
+                    <td><u>Folle</u>. La sola idea di provarci è ridicola.</td>
+                </tr>
+                <tr>
+                    <th>5+</th>
+                    <td><u>Quasi impossibile</u>. Ogni logica suggerisce che quest'azione non sia possibile..</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="flex space-around">
+            <div class="flash attention">
+                <h5>ESEMPIO:</h5>
+                <p>Wilson sta inseguendo un <b>Murkrow</b> che gli ha rubato la borsa da allenatore.</p>
+                <p>Il <b>Murkrow</b> è rallentato dal peso della borsa e quindi non riesce a volare abbastanza in alto.</p>
+                <p>Questo rende il compito piuttosto facile e a Wilson basta un solo successo per catturare il ladro.</p>
+                <p>Più tardi, quello stesso giorno, un <b>Honchkrow</b> arriva e gli ruba di nuovo la borsa: essendo più forte, non è rallentato e a Wilson serviranno tre successi per completare il tiro.</p>
+                <p>Se non riesce a catturarlo al primo tentativo e <b>Honchkrow</b> inizia a volare più in alto, la difficoltà del tiro aumenterà progressivamente, finché <b>Honchkrow</b> non sarà fuori dalla sua portata e volerà via.</p>
+            </div>
+        </div>
+
         <section id="critical-failure">
             <h4>Fallimento critico</h4>
-            <p></p>
+            <p>Performare male quando la situazione è già difficile può portare a risultati catastrofici.</p>
+            <p class="flash active">Se si ottiene un esito con 3 successi in meno di quanti necessari, non solo fallirai nell'intento, ma ci saranno delle conseguenze.</p>
+            <p>In caso di fallimento critico potresti ricevere del danno, ferire un compagno, rendere impossibile il completamente del compito, subire un <span class="variant">Cambiamento di Stato</span>... o peggio.</p>
+            <p>Questo significa che compiti <i>problematici</i> o <i>impegnativi</i> si tentare provare facilmente, ma come la difficoltà si fa più alta, la possibilità di rimanere feriti o subire conseguenze disastrose si fa reale.</p>
+            <p>Maggiore è il numero di successi richiesto per portare a termine un'azione, peggiore sarà l'esito in caso di fallimento critico.</p>
         </section>
     </article>
 
     <article id="ranking">
         <h3>Classificazione e gradi</h3>
-        <p></p>
+        <p>Anche i <span class="variant">Campioni</span> son stati novellini ad un certo punto delle loro vite ed oggi segna l'inizio del <i>vostro</i> viaggio e sono molte le avventure che vi attendono.</p>
+        <p>Che abbiate sempre sognato di diventare allenatori o che le circostanze vi abbiano portato su questa strada, se sarete disposti a lavorare duro, magari un giorno diventerete addirittura i migliori.</p>
+        <p>Un buon allenatore è in grado di accogliere un pokémon pauroso e trasformarlo in un campione. Il grado determina la tua abilità di allenare i pokémon e rappresenta la tua crescita personale.</p>
+        <p>Quando si parla di allenare un pokémon non si intende soltanto insegnargli come combattere e sopravvivere, ma anche come liberare il proprio potenziale, controllare le mosse più avanzate e adattarsi ad ogni strategia.</p>
+        <p class="flash active">La classificazione funziona attraverso gli <span class="variant">Achievements</span>. Quanto un allenatore raggiunge tutti i traguardi necessari per salire di grado, lui e tutti i suoi pokémon gioveranno dei benefici relativi.<br/>Il narratore può aggiungere o modificare i requisiti necessari per salire di grado.</p>
+        <p>Il Grado è una rappresentazione del tempo e dell'impegno dedicato ad un particolare stile di vita, quello di allenato in questo caso.</p>
         
+        <p>Anche i pokémon selvatici hanno un grado e sta al narratore deciderlo.</p>
+        <p class="flash active">I pokémon non seguiranno gli ordini di un allenatore di grado più basso rispetto al loro.</p>
+        <p>Se si cattura o scambia un pokémon di Grado superiore al proprio, il Grado rimarrà invariato, rendendo quasi impossibile controllarlo o far si che vi obbedisca. Un allenatore che non sappia controllare i propri pokémon durante un torneo o una lotta ufficiale verrà squalificato.</p>
+        <p>Al contrario, se si catturerà un pokémon di grado inferiore, questo verrà riportato al proprio dopo qualche <span class="variant">Sessione di Allenamento</span>. Visto che il Grado di un allenatore rispecchia la sua maestria, ciò significa che avrà anche imparato come tirare il meglio fuori da un pokémon e ora saprà ottenere questo risultato con più facilità.</p>
+
         <section id="starter-rank">
             <h4>Starter - Novizio</h4>
-            <p></p>
+            <p>È qui che inizi la tua carriera, senza alcuna esperienza pratica. La maggior parte dei pokémon selvatici non ti darà ascolto e persino i tuoi faranno fatica a capire qualcosa che non si adatti ai loro istinti primitivi, dato che semplicemente non hai ancora una chiara idea del loro potenziale.</p>
             <h4>Traguardi necessari</h4>
             <ul>
-
+                <li>Ottenere la tua licenza da allenatore (scheda personaggio);</li>
+                <li>Pttenere il tuo primo pokémon;</li>
             </ul>
             <h4>Benefits</h4>
             <ul>
-
+                <li>5 Skill Points da distribuire;</li>
+                <li>Limite Skill a 1 (non puoi avere più di 1 punto per ogni Skill);</li>
+                <li>Puoi controllare un massimo di 2 pokémon;</li>
             </ul>
         </section>
         
         <section id="beginner-rank">
             <h4>Beginner - Principiante</h4>
-            <p></p>
+            <p>Hai messo in pratica tutto ciò che hai letto nei libri e visto in tv; magari c'è voluto qualche tentativo, ma finalmente ce l'hai fatta. Pokémon giovani ed accondiscendenti capiscono i tuoi allenamenti e seguono i tuoi ordini.</p>
             <h4>Traguardi necessari</h4>
             <ul>
-
+                <li>Comprendere correttamente i gesti del tuo pokémon;</li>
+                <li>Allenare un pokémon;</li>
+                <li>Catturare il tuo secondo pokémon;</li>
+                <li>Vincere la tua prima lotta ufficiale contro un altro allenatore;</li>
             </ul>
             <h4>Benefits</h4>
             <ul>
-
+                <li>2 Attribute Points aggiuntivi da distribuire;</li>
+                <li>2 Social Attribute Points aggiuntivi da distribuire;</li>
+                <li>4 Skill Points aggiuntivi da distribuire;</li>
+                <li>Limite Skill a 2 (non puoi avere più di 2 punti per ogni Skill);</li>
+                <li>Puoi controllare un massimo di 2 pokémon;</li>
             </ul>
         </section>
         
         <section id="amateur-rank">
             <h4>Amateur - Dilettante</h4>
-            <p></p>
+            <p>Ci è voluto un po', ma hai afferrato le basi di ciò che significhi essere un allenatore: devi allenarti duramente, prenderti cura dei tuoi compagnia e imparare dei Capipalestra. La maggior parte degli allenatori che incontri si può considerare di questo grado.</p>
             <h4>Traguardi necessari</h4>
             <ul>
-
+                <li>Evolvere un pokémon;</li>
+                <li>Vincere la tua prima medaglia;</li>
+                <li>Incrementare Felicità e Fedeltà di un pokémon;</li>
             </ul>
             <h4>Benefits</h4>
             <ul>
-
+                <li>2 Attribute Points aggiuntivi da distribuire;</li>
+                <li>2 Social Attribute Points aggiuntivi da distribuire;</li>
+                <li>3 Skill Points aggiuntivi da distribuire;</li>
+                <li>Limite Skill a 3 (non puoi avere più di 3 punti per ogni Skill);</li>
+                <li>Puoi controllare un massimo di 3 pokémon;</li>
             </ul>
         </section>
         
         <section id="ace-rank">
             <h4>Ace - Esperto</h4>
-            <p></p>
+            <p>Pochi allenatori hanno la dedizione ed il talento per superare la mediocrità. Un Esperto supera ogni ostacolo, applica tutto ciò che impara nel proprio viaggio e sa dimostrare il vero potenziale dei suoi pokémon.</p>
             <h4>Traguardi necessari</h4>
             <ul>
-
+                <li>Ottieni 8 medaglie;</li>
+                <li>Costruisci un team di 6 pokémon completamente evoluti;</li>
+                <li>Sconfiggi il tuo Rivale;</li>
             </ul>
             <h4>Benefits</h4>
             <ul>
-
+                <li>2 Attribute Points aggiuntivi da distribuire;</li>
+                <li>2 Social Attribute Points aggiuntivi da distribuire;</li>
+                <li>3 Skill Points aggiuntivi da distribuire;</li>
+                <li>Limite Skill a 4 (non puoi avere più di 4 punti per ogni Skill);</li>
+                <li>Puoi controllare un massimo di 5 pokémon;</li>
             </ul>
         </section>
         
         <section id="pro-rank">
             <h4>Pro - Professionista</h4>
-            <p></p>
+            <p>Sei diventato un punto di riferimento tra gli allenatori. Sai domare anche il pokémon più selvaggio e trasformarlo in un cittadino modello. Chi ti conosce ti reputa pionere del tuo campo di specializzazione e sai trovare risposte riguardo il mondo pokémon, realizzando cosa significhi realmente essere un allenatore.</p>
             <h4>Traguardi necessari</h4>
             <ul>
-
+                <li>Ottieni un lavoro legato ai pokémon;</li>
+                <li>Attraversa la <i>Via Vittoria</i>;</li>
+                <li>Cattura un pokémon di grado Professionale;</li>
             </ul>
             <h4>Benefits</h4>
             <ul>
-
+                <li>2 Attribute Points aggiuntivi da distribuire;</li>
+                <li>2 Social Attribute Points aggiuntivi da distribuire;</li>
+                <li>3 Skill Points aggiuntivi da distribuire;</li>
+                <li>Limite Skill a 5 (non puoi avere più di 5 punti per ogni Skill);</li>
+                <li>Puoi controllare un massimo di 6 pokémon;</li>
             </ul>
         </section>
         
         <section id="master-rank">
             <h4>Master - Specialista</h4>
-            <p></p>
+            <p>Hai esplorato ogni angolo della tua Regione. Hai domato pokémon e habitat, incontrato creature leggendarie e scoperto la verità dietro a strane dicerie e miti antichi.</p>
             <h4>Traguardi necessari</h4>
             <ul>
-
+                <li>Trova e studia ogni pokémon della tua Regione;</li>
             </ul>
             <h4>Benefits</h4>
             <ul>
-
+                <li>Un totale di 14 Social Attribute Points da distribuire;</li>
+                <li>Aggiungi 2 dadi aggiunti ad ogni lancio sulle Skills;</li>
+                <li>I tratti passivi, come <b>HP</b>, <b>Will</b>, <b>Iniziativa</b>, <b>Difesa</b> e <b>Difesa Speciale</b> sono aumentati di 2;</li>
             </ul>
         </section>
         
         <section id="champion-rank">
             <h4>Champion - Campione</h4>
-            <p></p>
+            <p>Sei riuscito alla fine a sconfiggere il campione e ottenere il più alto titolo che un allenatore può avere. La tua fama trascende ogni confine e Lega, mentre i tuoi pokémon superano i limiti naturali e le abilità della loro specie.</p>
             <h4>Traguardi necessari</h4>
             <ul>
-
+                <li>Sconfiggi il campione nella sfida alla Lega Pokémon;</li>
             </ul>
             <h4>Benefits</h4>
             <ul>
-
+                <li>Un totale di 14 Social Attribute Points da distribuire;</li>
+                <li>Puoi distribuire fino a 2 Attribute Points oltre il limite;</li>
+                <li>1 Skill Point aggiuntivo da distribuire;</li>
             </ul>
         </section>
+    </article>
+
+    <article id="natures">
+        <h3>Nature</h3>
+        <p></p>
     </article>
     
 
