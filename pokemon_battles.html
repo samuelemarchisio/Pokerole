@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css">
+    <title>Pokerole</title>
+
+    <style>
+        #natures .nature,
+        #natures .notes {
+            max-width: 450px;
+        }
+
+        #resistences-weaknesss-and-immunities .mechanics {
+            max-width: 450px;
+        }
+    </style>
+</head>
+<body id="main">
+    <div class="my-2 flex space-around">
+        <img src="img/SugimoriMoonBall.png" width="200px" height="200px" alt="">
+    </div>
+    <h1 class="centered">Pokerole</h1>
+
+    <!-- <h2>Guida sintetica</h2> -->
+    <a href="index.html" class="flash variant fixed smaller" style="right: .5em; bottom: .5em;">
+        <span>&lt</span>
+    </a>
+    <h3 id="summary">Lotte Pokémon</h3>
+    <ol>
+        <li><a href="#resistences-weaknesss-and-immunities">Resistenze, debolezze e immunità</a></li>
+        <li>
+            <a href="#how-to-battle">Come si lotta</a>
+            <ol type="a">
+                <li><a href="#fight-step-by-step">Lotta pesso per passo</a></li>
+            </ol>
+        </li>
+        <li>
+            <a href="#trainer-actions">Azioni dell'allenatore</a>
+            <ol type="a">
+                <li><a href="#switch-pokemon">Cambiare pokémon</a></li>
+                <li><a href="#use-an-item">Usare uno strumento su un pokémon</a></li>
+                <li><a href="#search-for-cover">Cercare riparo</a></li>
+                <li><a href="#enter-the-fray">Gettarsi nella mischia</a></li>
+                <li><a href="#run-away-from-battle">Fuggire dalla lotta</a></li>
+            </ol>
+        </li>
+        <li>
+            <a href="#how-damage-works">Come funziona il danno</a>
+            <ol type="a">
+                <li><a href="#fainting">Svenimento</a></li>
+                <li><a href="#lethal-damage">Danno Letale</a></li>
+                <li><a href="#pain-penalizations">Penalità del dolore</a></li>
+            </ol>
+        </li>
+    </ol>
+    <section style="height: 5em;"></section>
+    
+    <article id="pokemon-battles">
+        <h3>Lotte Pokémon</h3>
+        <p>Il mondo è pieno di fonti energetiche che i pokémon possno controllare, assorbire nei propri corpi e trasformare in forti attacchi.</p>
+        <p>Un pokémon particolarmente abile nel manipolare una certa qualità di energia è etichettato con quello che definiamo <span class="variant">Tipo</span>. Fino ad ora son stati riconosiuti 18 Tipi Pokémon.</p>
+        <p>Ognuno di questi Tipi ha poteri che possono essere usati ed alcuni pokémon son capaci di manipolare egregiamente non sol uno, ma due Tipi, guadagnando anche punti di forza e debolezze.</p>
+
+        <section id="resistences-weaknesss-and-immunities">
+            <h4>Resistenze, debolezze e immunità</h4>
+            <p>Ci son diversi modi di vincere una lotta, puoi sfruttare le debolezze dell'avversario o far leva sui tuoi punti di forza; un buon allenatore sa riconoscere quale sia la strategia più adatta all'occasione.</p>
+            <p>I Tipi sono un modo comune per un modo comune di avvantaggiarsi in uno scontro, se scegliessi un pokémon resistente agli attacchi del tuo avversario, non sarà un problema anche se non sarà altrettanto forte.</p>
+
+            <div class="flex space-between wrap">
+                <div class="mechanics">
+                    <div class="flash variant centered">
+                        <p class="bold">Resistenza</p>
+                        <p>Tutti i Tipi pokémon, ad eccezione di quello Normale, resistono a qualche Tipo di Mossa.</p>
+                        <p>Questo tipo di protezione rende i danni subiti <span class="italic underline">Non molto efficaci</span>, riducendo di 1 il danno totale subito.</p>
+                    </div>
+                </div>
+                
+                <div class="mechanics">
+                    <div class="flash variant centered">
+                        <p class="bold">Debolezza</p>
+                        <p>Tutti i pokémon sono deboli ad alcuni Tipi.</p>
+                        <p>Questa vulnerabilità fa subire loro danni <span class="italic underline">Super efficaci</span>, il ché significa che riceverete 1 danno in più dall'attacco, A PATTO CHE il lancio abbia registrato almeno 1 successo.</p>
+                    </div>
+                </div>
+                
+                <div class="mechanics">
+                    <div class="flash variant centered">
+                        <p class="bold">Immunità</p>
+                        <p>Alcuni Tipi pokémon sono <span class="italic underline">Immuni</span> a specifiche tipologie di danno.</p>
+                        <p>Non riceveranno alcun danno da danni di questo Tipo, ma saranno comunque influenzati dalle mosse di supporto.</p>
+                    </div>
+                </div>
+                
+                <div class="mechanics">
+                    <div class="flash variant centered">
+                        <p class="bold">Doppie Resistenze/Debolezze</p>
+                        <p>Due Tipi possono condividere una resistenza, in questo caso un pokémon con doppio Tipo potrebbe mitigare fino a due danni ricevuti da attacchi <span class="italic underline">Non molto efficaci</span> veso entrambi i Tipi.</p>
+                        <p>Lo stesso si applica per le debolezze, per cui una doppia debolezza comporterà due danni aggiuntivi subiti.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+
+    <article id="how-to-battle">
+        <section>
+            <h3>Come si lotta</h3>
+            <p>Le Lotte Pokémon son lo sport principale a questo mondo per la presenza delle miracolose Pozioni di Cura e la sanità gratuita, che prevengono ferite gravi e permanenti per te ed i tuoi compagni.</p>
+            <p>La Lega Pokémon fa del suo meglio per rendere questo sport il più sicuro possibile, circoscrivendolo a match ufficiali. È una tua scelta combattere, ricorda sempre perché i tuoi pokémon lo fanno.</p>
+
+            <p>Una Lotta Pokémon si compone di 4 parti: <span class="variant">Iniziativa</span>, <span class="variant">Rounds</span>, <span class="variant">Turni</span> e <span class="variant">Fine del Round</span>.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fase di<br/>gioco</th>
+                        <th>Descrizione<br/>e azioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Iniziativa</th>
+                        <td>
+                            <p>Durante questa sezione viene definito l'ordine di attacco, che rimarrà invariato fino alla fine della lotta.</p>
+                            <p>Esitono alcune Mosse che cambiano temporaneamente l'ordine di attacco, permettendovi di attaccare prima o dopo.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Rounds</th>
+                        <td>
+                            <p>Un Round dura circa 10 secondi e si compone di Turni; durante questo arco temporale pokémon e allenatori possono eseguire azioni o lanciare attacchi.</p>
+                            <p>Un pokémon veloce ed esperto può riuscire ad eseguire più azioni in un singolo turno, mentre un pokémon di grado più basso pul necessita dell'intero turno per un singolo attacco.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Turni</th>
+                        <td>
+                            <p>I Turni son frazioni di Round, dove il pokémon può usare le sue azioni per eseguire delle mosse.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Fine del turno</th>
+                        <td>
+                            <p>Una volta che tutti i pokémon hanno eseguito le loro azioni il turno termina.</p>
+                            <p>In questa fase gli allenatori avranno modo di performare un'azione a loro permessa.</p>
+                            <p>Inoltre sarà in questo momento che si applicheranno gli effetti di alcune Mosse o Condizioni di Stato.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Di seguito vediamo passo per passo come si sviluppa una lotta.</p>
+        </section>
+
+        <section id="#fight-step-by-step">
+            <div>
+                <h4 class="inline">1. Iniziativa</h4>
+                <span class="italic">- "Pikachu, scelgo te!" -</span>
+            </div>
+            <p class="flash active">Lancia un dado e aggiungi il tuo <span class="variant">Punteggio Iniziativa</span> al risultato.</p>
+            <div class="flex space-around">
+                <div class="flash variant centered">
+                    <p>Il Punteggio Iniziativa corrisponde a</p>
+                    <p class="bold">DEXTERITY + ALERT</p>
+                </div>
+            </div>
+            <p>Chiunque ottenga il risultato più alto agisce per primo e così via in ordine decrescente.</p>
+        </section>
+            
+        <section>
+            <div>
+                <h4 class="inline">2. Usa una mossa</h4>
+                <span class="italic">- "Pikachu, usa Fulmine!" -</span>
+            </div>
+            <p class="flash active">Lancia i dadi per l'Accuratezza dell'attacco</p>
+            <p>Durante il turno del tuo pokémon puoi attaccare. Dopo aver scelto la Mossa da usare lancia per la sua Accuratezza per vedere se colpisce o meno.</p>
+            <p>Ogni mossa ha indicato il proprio <span class="variant">Accuracy roll</span>.</p>
+        </section>
+        
+        <section>
+            <div>
+                <h4 class="inline">2.5. Schivata/Scontro</h4>
+                <span class="italic">- "Eevee, non lasciare che ti colpisca!" -</span>
+            </div>
+            <p>L'avversario può provare ad evitare l'attacco o contrattaccare.</p>
+            <p class="flash active">L'avversario lancia <span class="variant">DEXTERITY + EVASION</span> per schivare.<br/>Se ottiene il tuo stesso numero di successi eviterà l'attacco, senza subire danni o i suoi effetti.</p>
+            <p class="flash active">L'avversario lancia <span class="variant">STRENGHT/SPECIAL + CLASH</span> per contrattaccare.<br/>Se ottiene il tuo stesso numero di successi, subirete entrambi 1 danno.<br/><span class="bold">Debolezze e resistenze saranno da tenere in conto conto nel calcolo del danno.</span></p>
+            <p class="underline mb-0">Schivare e scontrarsi contano come un Azione.</p>
+            <p class="underline mb-0">Scontrarsi richiede l'uso di una mossa offensiva.</p>
+            <p class="underline mb-0">Schivare e scontrasi possono eseguiti ognuno una singola volta per Round.</p>
+        </section>
+        
+        <section>
+            <div>
+                <h4 class="inline">3. Danno</h4>
+            </div>
+            <p class="flash active">Lancia per il danno della Mossa e togli il valore di DIFESA o DIFESA SPECIALE dell'avversario.</p>
+            <p>Se la mossa trova il bersaglio è ora di lanciare i dadi per calcolare il danno!</p>
+            <div class="flex space-around">
+                <div class="flash variant centered">
+                    <p>Ogni mossa indica come calcolare il numero di dadi da lanciare<br/>per il danno, ma generalmente il metodo è:</p>
+                    <p><span class="bold">STRENGHT + POTENZA MOSSA - DIFESA</span><br/>oppure<br/><span class="bold">SPECIAL + POTENZA MOSSA - DIFESA SPECIALE</span></p>
+                    <p>Ogni successo corrisponde ad un danno. In caso la pool di dadi fosse<br/>ridotta a 0 o non si ottenessero successi, il danno inflitto sarà comunque 1.</p>
+                    <p>Se vuoi applicare il danno della Super efficacia è necessario<br/>ottenere almeno un successo sul lancio per il Danno.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <h4 class="inline">4. Prossimo!</h4>
+                <span class="italic">- "Eevee, vai con Turbosabbia!" -</span>
+            </div>
+            <p class="flash active">E ora è il Turno del prossimo pokémon</p>
+            <p>Il prossimo pokémon in ordine di Iniziativa avrà la sua possibilità di usare una Mossa.</p>
+            <p>Ora è il turno di un'altro pokémon di eseguire i punti 2 e 3.</p>
+        </section>
+
+        <section>
+            <div>
+                <h4 class="inline">5. Azioni multiple</h4>
+            </div>
+            <p class="flash active">Un pokémon può avere più Turni in un singolo Round.</p>
+            <p>Una volta che tutti i pokémon hanno concluso il loro Turno, ognuno di loro può provare ad eseguire un'altra azione. Anche in questo caso si rispetterà l'ordine di Iniziativa.</p>
+            <p class="smaller">Per maggiori dettagli sul funzionamento, far riferimento alla sezione dedicata.</p>
+        </section>
+
+        <section>
+            <div>
+                <h4 class="inline">Fine del Round</h4>
+            </div>
+            <p class="flash active">Il Turno è finito, tempo di ricominciare da capo.</p>
+            <p>Una volta che tutti avranno concluso le loro azioni, quel che resta da fare è di chiudere tutto con eventuali azioni degli allenatori, applicare effetti secondari delle mosse, di stato o condizioni esterne, prima di cominciare un altro turno.</p>
+            <p>Questo iter si ripeterà fino alla conclusione dello scontro.</p>
+        </section>
+    </article>
+
+    <article id="trainer-actions">
+        <h3>Azioni dell'allenatore</h3>
+        <p>Gli allenatori non son semplici spettatori della lotta, ma alla fine di ogni turno hanno l'occasione di eseguire un'azione.</p>
+        <p>Scegli tra le differenti azioni possibili, ognuna con i suoi vantaggi e svantaggi.</p>
+        <ul>
+            <li>Cambiare pokémon;</li>
+            <li>Usare uno strumento su un pokémon;</li>
+            <li>Cercare riparo;</li>
+            <li>Gettarsi nella mischia;</li>
+            <li>Fuggire dalla lotta;</li>
+        </ul>
+        
+        <section>
+            <h4 id="switch-pokemon">Cambiare pokémon</h4>
+            <p>Gli allenatori possono impiegare la loro azione per richiamare e sostituire fino a due pokémon.</p>
+            <p>Puoi richiamare il tuo pokémon in qualsiasi moemnto del Round, ma durante un Incontro Ufficiale devi immediatamente mandarne in campo un altro o verrà considerata come un'ammissione di resa.</p>
+            <p class="flash active">Un pokémon mandato in campo a metà turno sarà disorientato per uqalche secondo e potrebbe diventare bersaglio di un attacco.<br/>Per evitare questa situazione è bene sostituire i pokémon al termine del turno.</p>
+        </section>
+        
+        <section>
+            <h4 id="use-an-item">Usare uno strumento su un pokémon</h4>
+            <p>I pokémon possono rimaner feriti in una lotta, ma gli allenatori non possono permettersi di rischiare la loro incolumità per curarli durante uno scontro, pertanto devo chiedere ai loro pokémon di raggiungerli per un trattamento rapido.</p>
+            <p>Questo li lascerà però scoperti per qualche secondo, in cui non saranno in grado di attaccare, difendersi o schivare. Chiamare il pokémon e curarlo richiederà l'intero turno.</p>
+            <div class="flex space-around">
+                <div class="flash variant centered">
+                    <p>Il trattamento permetterà al pockémon di<br/>recuperare <span class="bold">HP</span> pari al numero di successi ottenuti su:</p>
+                    <p class="bold">CLEVER + MEDICINA</p>
+                </div>
+            </div>
+            <p>Se l'allenatore è in mischia potrà venire in soccorso senza che il proprio pokémon debba interrompere lo scontro.</p>
+        </section>
+        
+        <section>
+            <h4 id="search-for-cover">Cercare riparo</h4>
+            <p>Le lotte non ufficiali sono caotiche e gli allenatori potrebbero diventare bersaglio di attacchi, diretti o collaterali.</p>
+            <div class="flex space-around">
+                <div class="flash variant centered">
+                    <p>A fine Round l'allenatore potrà osservare i dintorni<br/>alla cerca di un posto dove ripararsi, lanciando su:</p>
+                    <p class="bold">INSIGHT + ALERT</p>
+                    <p>e nascodersi al sicuro, finché la protezione reggerà</p>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h4 id="enter-the-fray">Gettarsi nella mischia</h4>
+            <p>Dicono che se vuoi che qualcosa sia fatto bene, devi fartelo da solo... e alcuni allenatori prendono questo detto alla lettera.</p>
+            <p class="flash active">A fine Round l'allenatore può decidere di essere proattivo nella lotta e, al prossimo Round, potrà lanciare su Iniziativa ed avere il proprio turno come tutti le parti in lotta.</p>
+            <p>Un allenatore che sta in mischia non avrà tempo per dare ordini ai propri pokémon, lasciandoli senza indicazioni e con la loro Natura a guidarli.</p>
+            <p>In questa situazione non sarà neanche possibile Cambiare pokémon o Cercare riparo, visto che queste azioni richiedono concentrazione.</p>
+            <p>Essere nella mischia comporta grandi rischi per l'allenatore e la Lega Pokémon VIETA questi comportamenti negli scontri ufficiali.</p>
+            <p>A fine Round l'allenatore può decidere di ritirarsi dalla mischia e tornare a dare comandi ai suoi pokémon.</p>
+        </section>
+        
+        <section>
+            <h4 id="run-away-from-battle">Fuggire dalla lotta</h4>
+            <p>Non si è obbligati a lotatre fino a che i pokémon collassino o si svenga. Nelel lotte ufficiali si può ammettere la sconfitta per terminare lo scontro. Per le lotte non ufficiali la situazione è più difficile.</p>
+            <div class="flex space-around">
+                <div class="flash variant centered">
+                    <p>A fine Round l'allenatore potrà richiamare i propri pokémon e tenatre la fuga, lanciando:</p>
+                    <p class="bold">DEXTERITY + ATLETICA vs DEXTERITY + ATLETICA dell'avversario</p>
+                    <p>Se ottieni più successi  del tuo avversario lo scontro terminerà.</p>
+                </div>
+            </div>
+            <p>Essere Bloccati impedirà la fuga.</p>
+        </section>
+    </article>
+
+    <article>
+        <section id="how-damage-works">
+            <h3>Come funziona il danno</h3>
+            <p></p>
+            
+            <h4 id="fainting">Svenimento</h4>
+            <p></p>
+            
+            <h4 id="lethal-damage">Danno Letale</h4>
+            <p></p>
+            
+            <h4 id="pain-penalizations">Penalità del dolore</h4>
+            <p></p>
+        </section>
+
+    </article>
+
+    <section style="height: 5em;"></section>
+</body>
+</html>
