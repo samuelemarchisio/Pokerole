@@ -29,7 +29,7 @@
     </a>
     <h3 id="summary">Lotte Pokémon</h3>
     <ol>
-        <li><a href="#resistences-weaknesss-and-immunities">Resistenze, debolezze e immunità</a></li>
+        <li><a href="#resistences-weaknesss-and-immunities">Resistenze, Debolezze e Immunità</a></li>
         <li>
             <a href="#how-to-battle">Come si lotta</a>
             <ol type="a">
@@ -54,6 +54,7 @@
                 <li><a href="#pain-penalizations">Penalità del dolore</a></li>
             </ol>
         </li>
+        <li><a href="#multiple-actions">Azioni Multiple</a></li>
     </ol>
     <section style="height: 5em;"></section>
     
@@ -64,7 +65,7 @@
         <p>Ognuno di questi Tipi ha poteri che possono essere usati ed alcuni pokémon son capaci di manipolare egregiamente non sol uno, ma due Tipi, guadagnando anche punti di forza e debolezze.</p>
 
         <section id="resistences-weaknesss-and-immunities">
-            <h4>Resistenze, debolezze e immunità</h4>
+            <h4>Resistenze, Debolezze e Immunità</h4>
             <p>Ci son diversi modi di vincere una lotta, puoi sfruttare le debolezze dell'avversario o far leva sui tuoi punti di forza; un buon allenatore sa riconoscere quale sia la strategia più adatta all'occasione.</p>
             <p>I Tipi sono un modo comune per un modo comune di avvantaggiarsi in uno scontro, se scegliessi un pokémon resistente agli attacchi del tuo avversario, non sarà un problema anche se non sarà altrettanto forte.</p>
 
@@ -308,18 +309,78 @@
     <article>
         <section id="how-damage-works">
             <h3>Come funziona il danno</h3>
-            <p></p>
+            <p>Ogni volta che te o un pokémon sarete colpiti da un attacco c'è una buona probabilità che suburete del danno; solo una Resistenza lo può prevenire, altrimenti subirete almeno 1 danno per Attacco.</p>
+            <p class="flash active">Allenatori e pokémon recuperano 1 HP ogni 8 ore.</p>
             
             <h4 id="fainting">Svenimento</h4>
-            <p></p>
+            <p>Subire danni pari al totale degli HP vi farà svenire. Una volta svenuti non potrete muovervi o attaccare, sarete in balia della situazione. Lo svenimento dura generalmente 8 ore, dopo le quali si recupererà 1 HP e si riprenderà conoscenza.</p>
+            <p class="flash active">Lo strumento <span class="variant">Revitalizzante</span> permetterà di riprendere conoscenza in pochi secondi. Una normale <span class="variant">Pozione</span>, invece, curerà il danno subito ed eviterà che una ferita si aggravi, la non farà rinsavire.</p>
+            <p>Svenire è una brutta esperienza per i pokémon, quindi lottare regolarmente finché i tuoi compagni non collasseranno al suolo porterà al logoramento del vostro rapporto.</p>
+            <p>Non è neanche saggio che sia l'allenatore a svenire in combattimento, in quanto un pokémon può essere richiamato nella Pokéball, ma un allenatore dovrà ricevere le cure da un'altro essere umano in quanto i pokémon non possono applicare le medicazioni. Inoltre se è vero che normalmente un pokémon selvatico non attacca nel momento in cui non vi reputa più una minaccia, anche il clima può diventare pericoloso quanto non si è incoscenti.</p>
             
             <h4 id="lethal-damage">Danno Letale</h4>
-            <p></p>
+            <p>Se voi o il vostro pokémon continuerete a subire danno una volta svenuti, questo danno diventerà Danno Letale. Esistono anche alcune mosse capaci di infliggere direttamente Danno Letale.</p>
+            <p class="flash active">A differenza del normale danno che guarisce col passare del tempo, il Danno Letale implica una ferita grave che peggiorerà se non curata. Una volta subito del Danno Letale, si perderà 1 HP ogni ora finché non curati o finché il corpo non reggerà oltre ed personaggio morirà.</p>
+            <p>Le Mosse che infliggono Danno Letale sono vietate nelle Lotte Ufficiali, ma possono essere comunque usate se si contiene la loro forza.</p>
+            <p>Le Mosse che infliggono Danno Letale vengono etichettate con un'icona "!" ed il simbolo di impatto su sfondo rosso.</p>
+            <div class="flex space-around">
+                <div class="flash variant">
+                    <h4 class="centered uppercase">Restare al sicuro</h4>
+                    <p>Se si subisce Danno Letale pari ai propri HP totali si muore.<br/>Per prevenirlo è importante prendere precauzioni per<br/>tenere sé stessi ed i propri pokémon al sicuro.</p>
+                    <p><span class="bold">1. Non badate a spese sugli oggetti di cura.</span><br/>Le pozioni possono essere care, ma la vita tua e dei tuoi<br/>pokémon non ha prezzo.</p>
+                    <p><span class="bold">2. Insegna ai tuoi pokémon mosse di cura.</span><br/>Se il tuo pokémon può apprendere una mossa che ti<br/>permette di recuperare un po' di salute può essere<br/>saggio prioritizzarla rispetto ad una mossa di danno.</p>
+                    <p><span class="bold">3. Impara una Skill Medica.</span><br/>Capiterà che finirete le pozioni; avere un allenatore nel<br/>proprio gruppo che sappia come trovare ed usare erbe<br/>mediche e bacche può salvare la vita.</p>
+                    <p><span class="bold">4. Schivate gli attacchi e cercate riparo.</span><br/>Le lotte pokémon son piene di fiamme selvagge e raggi<br/>energetici; trovate un posto dove il vostro allenatore<br/>possa stare al sicuro<br/></p>
+                </div>
+            </div>
             
             <h4 id="pain-penalizations">Penalità del dolore</h4>
-            <p></p>
-        </section>
+            <p>Quando subite danno sentirete dolore; che siate voi o i vostri pokémon, man mano che accumulerete danni, movimenti e performance saranno sempre più compromessi. Questa è la Penalizzazione del Dolore.</p>
+            <p class="flash active">Rimuovi Successi da ogni tentativo di Azione in base alla Penalità accumulata.</p>
 
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Stato HP</th>
+                        <th>Penalizzazione</th>
+                        <th>Stato del corpo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Full HP</td>
+                        <td>Nessuna</td>
+                        <td>Nessun dolore o fastidio.</td>
+                    </tr>
+                    <tr>
+                        <td>Half HP<br/><span class="smaller">per difetto</span></td>
+                        <td>Rimuovi<br/>1 successo</td>
+                        <td>Il dolore ti sta intralciando.<br/>Muoversi è difficile.</td>
+                    </tr>
+                    <tr>
+                        <td>1 HP</td>
+                        <td>Rimuovi<br/>2 successi</td>
+                        <td>Stai per svenire.<br/>Tutto sembra sfuocato ed è difficile reggersi in piedi.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>La penalizzazione influenza ogni Azione che si prova ad eseguire da feriti (lanci su Precisione, Danno, tutti gli Attributi Sociali, Forza, Destrezza ed Insight compresi), ad eccezione dei lanci su Vitalità e Will.</p>
+            <p class="flash active">La penalizzazione sarà rimossa non appena recupererete HP; in caso questo non sia possibile, potrete scegliere di spendere 1 Punto Will per ammettere 1 dei Successi rimossi dalla Penalizzazione.</p>
+            <p>La penalizzazione potrà anche essere assegnata senza ricevere danno, ad esempio se si è esausti dall'esercizio fatto o in carenza di cibo e/o sonno.</p>
+        </section>
+    </article>
+
+    <article>
+        <section id="multiple-actions">
+            <h3>Azioni Multiple</h3>
+            <p>È possibile sfruttare la propria velocità ed intelletto per performare più azioni allo stesso tempo o in rapida successione.</p>
+            <p>Un esempio classico è in lotta, dove magari si può provare ad attaccare, evadere l'azione avversaria e provare a supportare gli alleati in un solo Round. Ma le Azioni Multiple non si limitano alla lotta.</p>
+            <p>Tutto ciò che dovete fare è lanciare la Pool di dadi, ma per ogni azione dopo la prima, il numero di successi richiesti aumenterà di 1.</p>
+            <p>Potrete eseguire fino a 5 Turni di Azione per Round, ma ognuno di questi sarà più difficile da portare a termine, aumentando il rischio di Fallimento Critico se non si è abbastanza abili.</p>
+            <p>Si può eseguire la seconda azione solo dopo che ogni parte in gioco ha avuto la sua occasione di agire, le uniche eccezioni sono le <span class="variant">Successioni di Azioni</span> (mosse multicolpo), <span class="variant">Schivate</span> e <span class="variant">Scontri</span>.</p>
+        </section>
     </article>
 
     <section style="height: 5em;"></section>
